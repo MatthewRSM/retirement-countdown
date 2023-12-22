@@ -1,0 +1,69 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+
+    background-color: #1C1C1C;
+    background-image: url(../images/background.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    height: 600px;
+
+}
+
+#container {
+
+    margin: 64px auto 0 auto;
+    background: #15293b;
+    width: 550px;
+    height: 550px;
+    border-radius: 10%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+button {
+
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 3%;
+
+}
+
+button:hover {
+
+    background-color: #035f3d;
+    color: gray;
+
+}
+
+h1 {
+
+    text-align: center;
+    font-size: 40px;
+    margin-top: 0px;
+    color: #fff;
+
+}
+
+h2 {
+
+    text-align: center;
+    font-size: 40px;
+    margin-top: 0px;
+    color: #fff;
+
+}
