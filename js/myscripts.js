@@ -11,10 +11,10 @@ var x = setInterval(function() {
     var distance = countDownDate - now;
         
     // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    var days = Math.floor(distance / (86400000));
+    var hours = Math.floor((distance % (86400000)) / (3600000));
+    var minutes = Math.floor((distance % (3600000)) / (60000));
+    var seconds = Math.floor((distance % (60000)) / 1000);
         
     // Output the result in an element with id="countdown"
     document.getElementById("countdown").innerHTML = days + " days<br>" + hours + " hours<br>" + minutes + " minutes<br>" + seconds + " seconds<br>";
@@ -29,7 +29,7 @@ var x = setInterval(function() {
 
 function share() {
 
-    navigator.clipboard.writeText("Robin retires in " + document.getElementById("countdown").innerHTML + ". Keep track at robinsretirementcountdown.com!");
+    navigator.clipboard.writeText("https://robinsretirementcountdown.com");
 
 }
 
